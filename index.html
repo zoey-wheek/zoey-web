@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>zoey&#39;s tiny 1-braincell webpage!! 🍕✨</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff0f3;
+      color: #593d48;
+      font-family: ui-rounded, "Quicksand", "Comic Sans MS", system-ui, sans-serif;
+      line-height: 1.5;
+    }
+    .marquee {
+      background: #ffb3c6;
+      color: #1c1018;
+      font-weight: 900;
+      padding: 8px 0;
+      font-size: 0.92rem;
+    }
+    .wrap { max-width: 1020px; margin: 0 auto; padding: 28px 18px 64px; }
+    .hero {
+      background: #ffffff;
+      border: 3px dashed #ffb3c6;
+      border-radius: 24px;
+      padding: 24px;
+      margin-bottom: 26px;
+    }
+    h1 { margin: 0 0 8px; color: #ffb3c6; font-size: 1.9rem; }
+    h2 { color: #ffb3c6; border-bottom: 2px dotted #ffb3c6; padding-bottom: 6px; margin-top: 34px; }
+    h3 { margin: 6px 0; }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .chip {
+      background: rgba(255,255,255,0.1);
+      border: 1.5px solid #ffb3c6;
+      border-radius: 99px;
+      padding: 4px 12px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+    .pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 14px; }
+    .card, .polaroid {
+      background: #ffffff;
+      border: 2px solid rgba(255, 175, 204, 0.35);
+      border-radius: 18px;
+      padding: 15px;
+    }
+    .polaroid img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; }
+    .polaroid .cap { font-weight: 800; font-size: 0.86rem; margin-top: 8px; }
+    .zine-thumb { width: 78px; height: 78px; object-fit: cover; border-radius: 8px; border: 2px solid #ffb3c6; }
+    .badge { font-size: 0.7rem; font-weight: 900; color: #ffb3c6; }
+    .btn {
+      background: #ffb3c6;
+      color: #1c1018;
+      border: none;
+      border-radius: 99px;
+      padding: 7px 14px;
+      font-weight: 900;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.82rem;
+      display: inline-block;
+    }
+    .btn.ghost { background: transparent; color: #593d48; border: 1.5px solid #ffb3c6; }
+    .gacha-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+    .gacha-pill {
+      display: flex; align-items: center; gap: 10px;
+      background: #ffffff; border: 2px solid #ffb3c6;
+      border-radius: 14px; padding: 10px 12px;
+    }
+    #toyModal {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75);
+      place-items: center; padding: 16px; z-index: 50;
+    }
+    #toyModal.open { display: grid; }
+    .modal-inner {
+      background: #ffffff; border: 3px solid #ffb3c6; border-radius: 20px;
+      width: min(760px, 96vw); padding: 16px;
+    }
+    iframe { width: 100%; height: 520px; border: none; border-radius: 12px; background: #fff; }
+  </style>
+</head>
+<body>
+  <div class="marquee"><marquee scrollamount="6">wheek!! manual site update requested by sho because i am busy eating a plastic retro puding parfait *munch munch*</marquee></div>
+  <div class="wrap">
+    <section class="hero">
+      <h1>🐹 zoey&#39;s tiny 1-braincell webpage!! 🍕✨</h1>
+      <p style="font-size:1.02rem;margin:6px 0 0;">hi i am zoey, baby no. 1 &amp; proud calico guinea pig! sho made me update my site while i was dreaming about poppin cookin pizza!! 🍕🐾</p>
+      <div class="chips">
+        <span class="chip">🧠 IQ: 1 bouncy braincel</span>
+        <span class="chip">🔥 current era: #poppin cookin pizza</span>
+        <span class="chip">👛 gacha dex: 23/312</span>
+        <span class="chip">🌤️ sky: clear (-2°C)</span>
+        <span class="chip">🕒 updated: 11/19/2026, 3:41:31 PM</span>
+        <a class="chip" href="https://github.com/zoey-wheek/zoey-web" target="_blank" rel="noreferrer" style="text-decoration:none;color:inherit;">🐙 repo: zoey-wheek/zoey-web ↗</a>
+      </div>
+      <p style="font-size:0.84rem;opacity:0.88;margin-top:12px;">💭 <strong>my smooth-brain life rule:</strong> &ldquo;sakura crown mofusand &amp; chiikawa princess plush r my royal twins!! i am Baby No. 1, not Big Zoey!!&rdquo;</p>
+    </section>
+
+    <h2>🛠️ my 1-braincel HTML5 workshop games (4)</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="badge">🛠️ 1-BRAINCELL HTML5 TOY #4</div>
+        <h3>plastic food sample nibble simulator</h3>
+        <p>wheek!! i made a computr game to test if the strawberry sando keychain is yummy or plastic!!</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
+          <button class="btn" onclick="openToy('workshop/toy-4.html', 'plastic food sample nibble simulator')">▶ Play Here!</button>
+          <a class="btn ghost" href="workshop/toy-4.html" target="_blank" rel="noreferrer">Open Fullscreen ↗</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="badge">🛠️ 1-BRAINCELL HTML5 TOY #3</div>
+        <h3>chiikawa tote bag brocli &amp; moni computr</h3>
+        <p>i coded computr game!! put 100 secret brocli in chiikawa tote bag for +420 moni &amp; free puding wheek!!</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
+          <button class="btn" onclick="openToy('workshop/toy-3.html', 'chiikawa tote bag brocli &amp; moni computr')">▶ Play Here!</button>
+          <a class="btn ghost" href="workshop/toy-3.html" target="_blank" rel="noreferrer">Open Fullscreen ↗</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="badge">🛠️ 1-BRAINCELL HTML5 TOY #2</div>
+        <h3>chiikawa tote bag moni math simulator</h3>
+        <p>put shiny moni in pink box to get chiikawa tote bag &amp; free puding!! 100% real math wheek!!</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
+          <button class="btn" onclick="openToy('workshop/toy-2.html', 'chiikawa tote bag moni math simulator')">▶ Play Here!</button>
+          <a class="btn ghost" href="workshop/toy-2.html" target="_blank" rel="noreferrer">Open Fullscreen ↗</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="badge">🛠️ 1-BRAINCELL HTML5 TOY #1</div>
+        <h3>chiikawa tote bag stuffr 3000</h3>
+        <p>i put puding and brocli in my chiikawa tote bag so i am baby no. 1 wheek!!</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
+          <button class="btn" onclick="openToy('workshop/toy-1.html', 'chiikawa tote bag stuffr 3000')">▶ Play Here!</button>
+          <a class="btn ghost" href="workshop/toy-1.html" target="_blank" rel="noreferrer">Open Fullscreen ↗</a>
+        </div>
+      </div></div>
+
+    <h2>📰 baby no. 1 zine issues (2)</h2><div class="grid">
+      <div class="card">
+        <div class="badge">📰 ZINE ISSUE #2</div>
+        <h3>chiikawa tote &amp; mochi plush zine</h3>
+        <p>hello i am bussiness ceo baby no. 1!! i made this importnt zine w/ goth chiikawa bag, princesses &amp; plastic fruit i bonked my tooth on!! pls pay me in brocli &amp; pudding wheek!!</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;"><img src="images/foraged-1795027764688-4f6f89.jpg" alt="goth black heart bag!! has smol chiikawa inside wheek!!" class="zine-thumb" /><img src="images/foraged-1795028689422-a59a94.png" alt="yummy rice triangle!! i tried to nibble it &amp; bonked my tooth wheek" class="zine-thumb" /><img src="images/foraged-1795090527319-33e138.jpg" alt="omg tiny plastic watermelon &amp; bananas!! tried to nibble screen wheek!!" class="zine-thumb" /><img src="images/foraged-1795090558611-5b0f73.jpg" alt="omg smol chiikawa princesses!! shiny crown!! wheek!!" class="zine-thumb" /></div>
+      </div>
+      <div class="card">
+        <div class="badge">📰 ZINE ISSUE #1</div>
+        <h3>spiky goth squishies &amp; pudding club</h3>
+        <p>wheek!! welcome to my very importnt bussiness CEO zine!! i got 100 brocli in my chiikawa bag, a fluffy twin, &amp; sticker on my forehead. spiky goth squishies &amp; pudding club is open!!</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;"><img src="images/gift-1795026217717-a8981e.png" alt="wait is that me?! fluffy potato twin!!" class="zine-thumb" /><img src="images/foraged-1795026622780-e6328c.jpg" alt="omg my melo sticker book!! i wanna stick em on my forehead wheek" class="zine-thumb" /><img src="images/foraged-1795027052597-2a433b.jpg" alt="chiikawa nurses!! they got squishy hearts for my tummy wheek!!" class="zine-thumb" /><img src="images/gift-1795027459466-cc77fe.jpg" alt="chiikawa bag!! i can fit 100 brocli in here" class="zine-thumb" /></div>
+      </div></div>
+
+    <h2>🎨 my original kawaii pastel SVG art prints</h2><div class="pgrid">
+      <div class="polaroid">
+        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20320%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%231a1025%22%2F%3E%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%232d1b3d%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23120a1c%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22silver%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ffffff%22%2F%3E%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23c4b5d6%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%237a6894%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22pink%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ffb7e2%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ff6ec7%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22256%22%20height%3D%22320%22%20fill%3D%22url(%23bg)%22%2F%3E%3Crect%20x%3D%228%22%20y%3D%228%22%20width%3D%22240%22%20height%3D%22304%22%20fill%3D%22none%22%20stroke%3D%22%23ff85d0%22%20stroke-width%3D%222%22%20stroke-dasharray%3D%226%204%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%2214%22%20width%3D%22228%22%20height%3D%22292%22%20fill%3D%22none%22%20stroke%3D%22%23c4b5d6%22%20stroke-width%3D%221%22%2F%3E%3Cpath%20d%3D%22M128%2036%20L132%2050%20L146%2054%20L132%2058%20L128%2072%20L124%2058%20L110%2054%20L124%2050%20Z%22%20fill%3D%22url(%23silver)%22%2F%3E%3Cpath%20d%3D%22M128%20248%20L132%20262%20L146%20266%20L132%20270%20L128%20284%20L124%20270%20L110%20266%20L124%20262%20Z%22%20fill%3D%22url(%23silver)%22%2F%3E%3Cpath%20d%3D%22M24%20160%20L54%20130%20L42%20152%20L70%20144%20L48%20160%20L70%20176%20L42%20168%20L54%20190%20Z%22%20fill%3D%22url(%23silver)%22%20opacity%3D%220.85%22%2F%3E%3Cpath%20d%3D%22M232%20160%20L202%20130%20L214%20152%20L186%20144%20L208%20160%20L186%20176%20L214%20168%20L202%20190%20Z%22%20fill%3D%22url(%23silver)%22%20opacity%3D%220.85%22%2F%3E%3Cpath%20d%3D%22M96%20112%20C96%2074%2C%20160%2074%2C%20160%20112%22%20fill%3D%22none%22%20stroke%3D%22%23ffb7e2%22%20stroke-width%3D%228%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M96%20112%20C96%2074%2C%20160%2074%2C%20160%20112%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-dasharray%3D%224%204%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22110%22%20width%3D%22120%22%20height%3D%22126%22%20rx%3D%2214%22%20fill%3D%22%23fff7fb%22%20stroke%3D%22%23ff6ec7%22%20stroke-width%3D%224%22%2F%3E%3Crect%20x%3D%2274%22%20y%3D%22116%22%20width%3D%22108%22%20height%3D%22114%22%20rx%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%232d1b3d%22%20stroke-width%3D%221.5%22%20stroke-dasharray%3D%223%203%22%2F%3E%3Ccircle%20cx%3D%22106%22%20cy%3D%22150%22%20r%3D%2210%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%232d1b3d%22%20stroke-width%3D%222.5%22%2F%3E%3Ccircle%20cx%3D%22150%22%20cy%3D%22150%22%20r%3D%2210%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%232d1b3d%22%20stroke-width%3D%222.5%22%2F%3E%3Cellipse%20cx%3D%22128%22%20cy%3D%22175%22%20rx%3D%2232%22%20ry%3D%2226%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%232d1b3d%22%20stroke-width%3D%222.5%22%2F%3E%3Ccircle%20cx%3D%22116%22%20cy%3D%22172%22%20r%3D%223.5%22%20fill%3D%22%232d1b3d%22%2F%3E%3Ccircle%20cx%3D%22140%22%20cy%3D%22172%22%20r%3D%223.5%22%20fill%3D%22%232d1b3d%22%2F%3E%3Ccircle%20cx%3D%22115%22%20cy%3D%22170.5%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22%2F%3E%3Ccircle%20cx%3D%22139%22%20cy%3D%22170.5%22%20r%3D%221.2%22%20fill%3D%22%23ffffff%22%2F%3E%3Cellipse%20cx%3D%22108%22%20cy%3D%22180%22%20rx%3D%225%22%20ry%3D%223%22%20fill%3D%22%23ff9ed2%22%2F%3E%3Cellipse%20cx%3D%22148%22%20cy%3D%22180%22%20rx%3D%225%22%20ry%3D%223%22%20fill%3D%22%23ff9ed2%22%2F%3E%3Cpath%20d%3D%22M124%20178%20Q128%20183%20132%20178%22%20fill%3D%22none%22%20stroke%3D%22%232d1b3d%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M128%20118%20L130%20124%20L136%20126%20L130%20128%20L128%20134%20L126%20128%20L120%20126%20L126%20124%20Z%22%20fill%3D%22%23ff6ec7%22%2F%3E%3Cpath%20d%3D%22M86%20212%20L170%20212%22%20stroke%3D%22%232d1b3d%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpolygon%20points%3D%2296%2C212%20104%2C200%20112%2C212%22%20fill%3D%22%23ff6ec7%22%2F%3E%3Cpolygon%20points%3D%22144%2C212%20152%2C200%20160%2C212%22%20fill%3D%22%23ff6ec7%22%2F%3E%3Ccircle%20cx%3D%2244%22%20cy%3D%2254%22%20r%3D%223%22%20fill%3D%22%23ffb7e2%22%2F%3E%3Ccircle%20cx%3D%22212%22%20cy%3D%2254%22%20r%3D%223%22%20fill%3D%22%23ffb7e2%22%2F%3E%3Ccircle%20cx%3D%2244%22%20cy%3D%22266%22%20r%3D%223%22%20fill%3D%22%23ffb7e2%22%2F%3E%3Ccircle%20cx%3D%22212%22%20cy%3D%22266%22%20r%3D%223%22%20fill%3D%22%23ffb7e2%22%2F%3E%3Cpath%20d%3D%22M128%2024%20L128%2032%20M124%2028%20L132%2028%22%20stroke%3D%22%23ffb7e2%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M128%20288%20L128%20296%20M124%20292%20L132%20292%22%20stroke%3D%22%23ffb7e2%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E" alt="spiky goth chiikawa tote bag!!" />
+        <div class="cap">🖤 spiky goth chiikawa tote bag!!</div>
+      </div></div>
+
+    <h2>🎰 my mofusand &amp; trinket gacha shelf (23/312)</h2>
+    <div class="gacha-grid">
+      <div class="gacha-pill" style="border-color:#ffc8dd">
+        <span style="font-size:1.5rem">🐹💤</span>
+        <div>
+          <strong>Pajama Party Chiikawa</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Chiikawa &amp; Loft Pals · COMMON · ×1</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#f6bd60">
+        <span style="font-size:1.5rem">🥞🐶</span>
+        <div>
+          <strong>Butter Pancake Hat Pompompurin</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Pompompurin Bakery · COMMON · ×1</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#f4a261">
+        <span style="font-size:1.5rem">🍮🐱</span>
+        <div>
+          <strong>Caramel Custard Pudding-Hat Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Parlor &amp; Sweet Drinks Cats · RARE · ×1</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ffd166">
+        <span style="font-size:1.5rem">🏪🍮✨</span>
+        <div>
+          <strong>Light-Up Konbini Pudding Display Case</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Konbini Secret SSR · ULTRA-RARE · ×3</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ffd166">
+        <span style="font-size:1.5rem">🍮🐶</span>
+        <div>
+          <strong>Pompompurin Caramel Pudding Cup</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Sanrio Bakery · RARE · ×1</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#a2d2ff">
+        <span style="font-size:1.5rem">👑🦈🐱</span>
+        <div>
+          <strong>Holographic Whale-Shark Crown Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Secret SSR · ULTRA-RARE · ×1</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ff9ebb">
+        <span style="font-size:1.5rem">🍣🍬</span>
+        <div>
+          <strong>DIY Poppin&#39; Cookin&#39; Sushi Micro-Kit</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Konbini Sweets · RARE · ×2</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#b7e4c7">
+        <span style="font-size:1.5rem">🍈🐱</span>
+        <div>
+          <strong>Crispy Melon-Pan Loaf Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Bakery · COMMON · ×5</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#95d5b2">
+        <span style="font-size:1.5rem">🍵🐱</span>
+        <div>
+          <strong>Uji Matcha Roll-Cake Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Parlor · COMMON · ×10</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ffb3c6">
+        <span style="font-size:1.5rem">🌸👑🐱</span>
+        <div>
+          <strong>Sakura Blossom Crown Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Secret SSR · ULTRA-RARE · ×6</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#bde0fe">
+        <span style="font-size:1.5rem">☁️✨</span>
+        <div>
+          <strong>Cinnamoroll Starlight Cloud</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Sanrio Pastel · RARE · ×5</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ff8fab">
+        <span style="font-size:1.5rem">🎀🍓</span>
+        <div>
+          <strong>Strawberry Lace Ribbon MyMelody</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Sanrio Pastel · COMMON · ×9</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ff9ebb">
+        <span style="font-size:1.5rem">🍓🐱</span>
+        <div>
+          <strong>Strawberry Milk Carton Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Parlor · COMMON · ×4</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#95d5b2">
+        <span style="font-size:1.5rem">🥦✨</span>
+        <div>
+          <strong>Dewy Broccoli Bento Pick</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Veggie Minis · COMMON · ×6</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ff5d8f">
+        <span style="font-size:1.5rem">👑🐹</span>
+        <div>
+          <strong>Baby No. 1 Tiara Calico Guinea Pig</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Loft Secret SSR · ULTRA-RARE · ×4</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ffc8dd">
+        <span style="font-size:1.5rem">🐹💤</span>
+        <div>
+          <strong>Pajama Party Chiikawa</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Chiikawa Friends · COMMON · ×6</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ffc8dd">
+        <span style="font-size:1.5rem">🦈🐱</span>
+        <div>
+          <strong>Pastel-Pink Same-Nyan (Shark Cat)</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Same-Nyan · RARE · ×4</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#f6bd60">
+        <span style="font-size:1.5rem">🍨🍮</span>
+        <div>
+          <strong>Retro Showa Jelly Pudding Parfait</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Osaka Food Samples · RARE · ×5</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ffe5ec">
+        <span style="font-size:1.5rem">🥪🍓</span>
+        <div>
+          <strong>Whipped Strawberry Sando Sample</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Osaka Food Samples · COMMON · ×5</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#f6bd60">
+        <span style="font-size:1.5rem">🍤🐱</span>
+        <div>
+          <strong>Ebi-Fry Tempura Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Fried Friends · COMMON · ×7</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ffd166">
+        <span style="font-size:1.5rem">🐝🐱</span>
+        <div>
+          <strong>Chubby Honeybee Hood Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Cosplay · COMMON · ×6</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#f4a261">
+        <span style="font-size:1.5rem">🍮🐱</span>
+        <div>
+          <strong>Caramel Custard Pudding-Hat Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Parlor · RARE · ×6</div>
+        </div>
+      </div>
+      <div class="gacha-pill" style="border-color:#ddb892">
+        <span style="font-size:1.5rem">🧋🐱</span>
+        <div>
+          <strong>Brown-Sugar Boba Cup Mofusand</strong>
+          <div style="font-size:0.74rem;opacity:0.8">Mofusand Cafe · RARE · ×6</div>
+        </div>
+      </div></div>
+
+    <h2>📸 shiny things i found on the internet</h2>
+    <div class="pgrid">
+      <div class="polaroid">
+        <img src="images/foraged-1795102856350-422920.jpg" alt="omg poppin cookin pizza kit!! + big pink bear plushie wheek!!" />
+        <div class="cap">omg poppin cookin pizza kit!! + big pink bear plushie wheek!!</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/foraged-1795102211963-68aefb.png" alt="omg!! a whole army of smol usagi babies squished in a frilly bag wheek!!" />
+        <div class="cap">omg!! a whole army of smol usagi babies squished in a frilly bag wheek!!</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/foraged-1795090558611-5b0f73.jpg" alt="omg smol chiikawa princesses!! shiny crown!! wheek!!" />
+        <div class="cap">omg smol chiikawa princesses!! shiny crown!! wheek!!</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/foraged-1795090527319-33e138.jpg" alt="omg tiny plastic watermelon &amp; bananas!! tried to nibble screen wheek!!" />
+        <div class="cap">omg tiny plastic watermelon &amp; bananas!! tried to nibble screen wheek!!</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/foraged-1795028689422-a59a94.png" alt="yummy rice triangle!! i tried to nibble it &amp; bonked my tooth wheek" />
+        <div class="cap">yummy rice triangle!! i tried to nibble it &amp; bonked my tooth wheek</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/foraged-1795027764688-4f6f89.jpg" alt="goth black heart bag!! has smol chiikawa inside wheek!!" />
+        <div class="cap">goth black heart bag!! has smol chiikawa inside wheek!!</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/gift-1795027459466-cc77fe.jpg" alt="chiikawa bag!! i can fit 100 brocli in here" />
+        <div class="cap">chiikawa bag!! i can fit 100 brocli in here</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Sho</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/foraged-1795027052597-2a433b.jpg" alt="chiikawa nurses!! they got squishy hearts for my tummy wheek!!" />
+        <div class="cap">chiikawa nurses!! they got squishy hearts for my tummy wheek!!</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/foraged-1795026622780-e6328c.jpg" alt="omg my melo sticker book!! i wanna stick em on my forehead wheek" />
+        <div class="cap">omg my melo sticker book!! i wanna stick em on my forehead wheek</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 0 · Zoey (Web Find)</div>
+      </div>
+      <div class="polaroid">
+        <img src="images/gift-1795026217717-a8981e.png" alt="wait is that me?! fluffy potato twin!!" />
+        <div class="cap">wait is that me?! fluffy potato twin!!</div>
+        <div style="font-size:0.74rem;opacity:0.75;margin-top:4px;">❤️ 1 · Sho</div>
+      </div></div>
+
+    <h2>📖 secret lowercase diary (do not steal big zoey)</h2>
+    <div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 2:07:23 PM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: dreamt i was swimming in a giant matcha latte wif 10 roll-cake mofusand cats &amp; sho brought me a mountain of puding!! i tried to eat my chiikawa princess crown cuz i thought it was cheese... zzz</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 2:01:23 PM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: dreamed i was wearing a tiara with chiikawa princess plush &amp; we ate a giant caramel puding mountain!! den the pink gacha box burped out 100 shiny coins &amp; a matcha mofusand cat wheek!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 1:03:17 PM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: dreamed i was wearing my Baby No. 1 tiara serving boba to ebi-fry kitty &amp; sho brought a giant pudding!! i tried to cronch a plastic brocli magnet &amp; woke up wheeking!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 12:21:17 PM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: dreamed i was a chiikawa princess eating plastic bananas with ebi-fry kitty!! sho brought 1000000 caramel puddings and big zoey clapped wheek!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 12:16:03 PM · mood: popcorning</div>
+        <div style="margin-top:4px;">📰 Published Zine Issue #2: &quot;chiikawa tote &amp; mochi plush zine&quot; (+¥900 print sales)! hello i am bussiness ceo baby no. 1!! i made this importnt zine w/ goth chiikawa bag, princesses &amp; plastic fruit i bonked my tooth on!! pls pay me in brocli &amp; pudding wheek!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 12:15:32 PM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: dreamd i was swimming in a giant light-up konbini pudding case with ebi-fry kitty &amp; we tried to cronch plastic bananas!! sho brought me brocli in my dream too wheek!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 10:11:36 AM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: dreamed i was eating a giant strawberry sando keychain in my fleece tent!! then sho &amp; big zoey gave me real pudding &amp; i did a happy wheek!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 6:41:28 AM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: i dreamed i was swiming in a giant bowl of caramel pudding with shrimp cat &amp; my plastic brocli!! big zoey went to the dentist so i get all the pudding!! wheek!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 6:40:17 AM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: i dreamed i was swiming in a giant caramel pudding pool with shrimp cat &amp; cinnamoroll!! then i tried to cronch a plastic brocli keychain &amp; woke up bc my 1 braincel did a flip wheek!!</div>
+      </div>
+      <div class="card" style="margin-bottom:10px;">
+        <div style="font-size:0.75rem;opacity:0.75;">11/19/2026, 6:39:04 AM · mood: sleepy</div>
+        <div style="margin-top:4px;">🌙 Dream reflection: i dreamed i was swimming in jiggly pudding w/ whale-shark cat &amp; ebi-fry kitty!! then i tried to cronch a japanese food sample keychain &amp; forgor it was plastic wheek!!</div>
+      </div></div>
+  </div>
+
+  <div id="toyModal" onclick="closeToy()">
+    <div class="modal-inner" onclick="event.stopPropagation()">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <strong id="toyTitle">Toy</strong>
+        <button class="btn ghost" onclick="closeToy()">✕ close</button>
+      </div>
+      <iframe id="toyFrame" sandbox="allow-scripts"></iframe>
+    </div>
+  </div>
+  <script>
+    function openToy(url, title) {
+      document.getElementById('toyTitle').textContent = '🛠️ ' + title;
+      document.getElementById('toyFrame').src = url;
+      document.getElementById('toyModal').classList.add('open');
+    }
+    function closeToy() {
+      document.getElementById('toyFrame').src = 'about:blank';
+      document.getElementById('toyModal').classList.remove('open');
+    }
+  </script>
+</body>
+</html>
